@@ -1,0 +1,6 @@
+C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\bin\Debug\Aufgabe1.2.exe.config
+C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\bin\Debug\Aufgabe1.2.exe
+C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\bin\Debug\Aufgabe1.2.pdb
+C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1.2.csprojResolveAssemblyReference.cache
+C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1.2.exe
+C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1.2.pdb
