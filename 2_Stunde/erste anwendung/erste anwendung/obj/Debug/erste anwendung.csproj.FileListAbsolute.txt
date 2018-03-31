@@ -1,0 +1,6 @@
+C:\Arbeiten\Studium\2_Stunde\erste anwendung\erste anwendung\bin\Debug\erste anwendung.exe.config
+C:\Arbeiten\Studium\2_Stunde\erste anwendung\erste anwendung\bin\Debug\erste anwendung.exe
+C:\Arbeiten\Studium\2_Stunde\erste anwendung\erste anwendung\bin\Debug\erste anwendung.pdb
+C:\Arbeiten\Studium\2_Stunde\erste anwendung\erste anwendung\obj\Debug\erste anwendung.csprojResolveAssemblyReference.cache
+C:\Arbeiten\Studium\2_Stunde\erste anwendung\erste anwendung\obj\Debug\erste anwendung.exe
+C:\Arbeiten\Studium\2_Stunde\erste anwendung\erste anwendung\obj\Debug\erste anwendung.pdb

@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aufgabe2
+{
+    class Program
+    {
+       
+
+        static void Main(string[] args)
+        {
+            double a;
+            double b;
+            double c;
+            int p;
+            double π = 3.14;
+
+            Console.WriteLine("Bitte eine 1 für Würfel, 2 für Kugel oder 3 für Oktaeder eingeben eingeben");
+            p = Console.Read();
+            Console.WriteLine(p);
+            
+            
+            if (p==49)
+                Console.WriteLine("Bitte eine Höhe eingeben");
+            a = Console.Read();
+            Console.WriteLine("Das Volumen des Würfels ist"+ a*a);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            if (p==2)
+
+            Console.WriteLine("Bitte einen Radius eingeben");
+            b = Console.Read();
+            Console.WriteLine("Das Volumen der Kugel ist" + π * b * b * b / 6);
+            Console.WriteLine("Die Oberfläche der Kugel ist" + π*b*b);
+
+            if (p==3)
+                Console.WriteLine("Bitte eine Höhe eingeben");
+                c = Console.Read();
+                c = c * c * c;
+                double c2 = Math.Sqrt(c);
+                Console.WriteLine("{Das Volumen des Oktaeder ist}"+ c2);
+
+            //Console.WriteLine("Bitte eine Höhe eingeben");
+            //a = Console.Read();
+            //Console.WriteLine("{0}", a);
+            //Console.ReadLine();
+            //Console.ReadLine();
+
+            //Console.WriteLine("Bitte einen Radius eingeben");
+            //b = Console.Read();
+            //Console.WriteLine("{0}", b);
+            //Console.ReadLine();
+            //Console.ReadLine();
+
+
+        }
+    }
+}

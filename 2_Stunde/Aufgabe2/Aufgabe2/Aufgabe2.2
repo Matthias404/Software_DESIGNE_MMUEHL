@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aufgabe2_2
+{
+    class Program
+    {
+       
+
+        static void Main(string[] args)
+        {
+            static string[] subjects = { "Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore" };
+            static string[] verbs = { "braut", "liebt", "studiert", "hasst", "zaubert", "zerstört" };
+            static string[] objects = { "Zaubertränke", "den Grimm", "Lupin", "Hogwards", "die Karte des Rumtreibers", "Dementoren" };
+			
+			
+			public int sublength = subjects.Length;
+			public int verblength = verbs.Length;
+			public int objlength = verbs.Length;
+						
+			Random rnd = new Random();
+			int sub = rnd.Next(0, sublength+1);
+			int verb = rnd.Next(0, verblength+1);
+			int obj = rnd.Next(0, objlength+1);
+
+			Console.WriteLine("Hallo" + subjects[sub]+ verbs[verb]+ objects[obj]);
+        }
+    }
+}
