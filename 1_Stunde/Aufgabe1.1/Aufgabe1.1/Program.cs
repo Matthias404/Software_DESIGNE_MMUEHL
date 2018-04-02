@@ -7,22 +7,21 @@ using System.Threading.Tasks;
 namespace Aufgabe1._1
 {
     class Program
-    {   public static String w1;
-        public static String k1;
-        public static String o1;
+    {
+       
         static void Main(string[] args)
         {
-            
-           
-            int a;
-            
-            Console.WriteLine("Bitte w für Würfel, k, Kugel oder o für Oktaeder eingeben");                     
-            string zeile =Console.ReadLine();
+
+
+            double a;
+
+            Console.WriteLine("Bitte w für Würfel, k, Kugel oder o für Oktaeder eingeben");
+            string zeile = Console.ReadLine();
             Console.WriteLine("bitte Wert eingeben");
             string wert = Console.ReadLine();
 
-            a = int.Parse(wert);
-            double pi = 3.14;
+            a = double.Parse(wert);
+
 
             string w1 = "w";
             string k1 = "k";
@@ -30,27 +29,85 @@ namespace Aufgabe1._1
 
             if (zeile == w1)
             {
-                Console.WriteLine("die Oberfläche des Würfels ist "+ a*a*6);
-                Console.WriteLine("das Volumen des Würfels ist " + a * a * a);
+                double ob = getCubeSurface(a);
+                Console.WriteLine("die Oberfläche des Würfels ist " + ob);
+
+                double vo = getCubeVolume(a);
+                Console.WriteLine("das Volumen des Würfels ist " + vo);
                 Console.ReadLine();
             }
 
             if (zeile == k1)
             {
-                Console.WriteLine("die Oberfläche der Kugel ist " + pi*a*a);
-                Console.WriteLine("das Volumen der Kugel ist " + (pi*a*a*a)/6);
+                double ob = getBallSurface(a);
+                Console.WriteLine("die Oberfläche des Würfels ist " + ob);
+
+                double vo = getBallVolume(a);
+                Console.WriteLine("das Volumen des Würfels ist " + vo);
                 Console.ReadLine();
+
             }
 
             if (zeile == o1)
             {
-                double sqrt3 = Math.Sqrt(3);
-                double sqrt2 = Math.Sqrt(2);
-                Console.WriteLine("die Oberfläche des Oktaeders ist "+ 2*sqrt3*a*a);
-                Console.WriteLine("das Volumen des Würfels ist " + (sqrt2*a*a*a)/3);
+
+                double ob = getOctSurface(a);
+                Console.WriteLine("die Oberfläche des Würfels ist " + ob);
+
+                double vo = getOctVolume(a);
+                Console.WriteLine("das Volumen des Würfels ist " + vo);
                 Console.ReadLine();
             }
+        }
+        static double getCubeSurface(double a)
+        {
 
+            double c = a * a * 6;
+
+            return (c);
+
+        }
+        static double getCubeVolume(double a)
+        {
+            
+            double c = a * a * a;
+
+            return (c);
+        }
+
+        static double getBallSurface(double a)
+        {
+            double pi = 3.14;
+            double c = pi * a * a;
+
+            return (c);
+
+        }
+
+        static double getBallVolume(double a)
+        {
+            double pi = 3.14;
+            double c = (pi * a * a * a) / 6;
+
+            return (c);
+        }
+
+        static double getOctSurface(double a)
+        {
+            double sqrt3 = Math.Sqrt(3);
+            
+            double c = 2 * sqrt3 * a * a;
+
+            return (c);
+
+        }
+
+        static double getOctVolume(double a)
+        {
+            double sqrt2 = Math.Sqrt(2);
+            double c = (sqrt2 * a * a * a) / 3;
+
+            return (c);
         }
     }
 }

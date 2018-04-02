@@ -4,3 +4,10 @@ C:\Arbeiten\Studium\1_Stunde\Aufgabe1.1\Aufgabe1.1\bin\Debug\Aufgabe1.1.pdb
 C:\Arbeiten\Studium\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.csprojResolveAssemblyReference.cache
 C:\Arbeiten\Studium\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.exe
 C:\Arbeiten\Studium\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.pdb
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\bin\Debug\Aufgabe1.1.exe.config
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\bin\Debug\Aufgabe1.1.exe
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\bin\Debug\Aufgabe1.1.pdb
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.csprojResolveAssemblyReference.cache
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.csproj.CoreCompileInputs.cache
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.exe
+G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.1\Aufgabe1.1\obj\Debug\Aufgabe1.1.pdb

@@ -15,28 +15,44 @@ namespace Aufgabe1._2
         static void Main(string[] args)
         {
 
-            int i = 0;
+           
 
-            while ( i <= 4) {
-
-                zufalls("");                
-                i = i+1; }
+                zufalls("");
+            
             Console.ReadLine();
         }
+
         static void zufalls(string ausgabe)
         {
-            int sublength = subjects.Length;
-            int verblength = verbs.Length;
-            int objlength = verbs.Length;
 
-            
-            Random rnd = new Random(); 
+            for (int i = 0; i <= 4; i++)
+            {
+                Console.WriteLine("" + subjects[erste()] + " " + verbs[zweite()] + " " + objects[drei()]);
 
-            int sub = rnd.Next(0, sublength);
-            int verb = rnd.Next(0, verblength);
-            int obj = rnd.Next(0, objlength);
-
-            Console.WriteLine("" + subjects[sub] + " " + verbs[verb] + " " + objects[obj]);
+            }
         }
-               }
+      
+
+            static int erste() { 
+                Random rnd1 = new Random();
+                int sublength = subjects.Length;
+                int sub = rnd1.Next(0, sublength);
+                return sub;
+             }
+
+            static int zweite() {
+                Random rnd2 = new Random();
+                int verblength = verbs.Length;
+                int verb = rnd2.Next(0, verblength);
+                return verb;
+             }
+            static int drei(){
+            Random rnd3 = new Random();
+                int objlength = objects.Length;
+                int obj = rnd3.Next(0, objlength);
+                return obj;
+
+            }
         }
+    }
+
