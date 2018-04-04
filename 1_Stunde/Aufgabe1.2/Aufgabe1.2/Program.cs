@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +15,6 @@ namespace Aufgabe1._2
         static void Main(string[] args)
         {
 
-           
-
                 zufalls("");
             
             Console.ReadLine();
@@ -27,27 +25,32 @@ namespace Aufgabe1._2
 
             for (int i = 0; i <= 4; i++)
             {
-                Console.WriteLine("" + subjects[erste()] + " " + verbs[zweite()] + " " + objects[drei()]);
+                Console.WriteLine(subjects[erste()] + " " + verbs[zweite()] + " " + objects[drei()]);
 
             }
         }
-      
 
+        
             static int erste() { 
+
                 Random rnd1 = new Random();
-                int sublength = subjects.Length;
-                int sub = rnd1.Next(0, sublength);
+                
+
+                int sub = rnd1.Next(0, subjects.Length);
+
                 return sub;
              }
 
             static int zweite() {
+
                 Random rnd2 = new Random();
                 int verblength = verbs.Length;
                 int verb = rnd2.Next(0, verblength);
                 return verb;
              }
             static int drei(){
-            Random rnd3 = new Random();
+
+                Random rnd3 = new Random();
                 int objlength = objects.Length;
                 int obj = rnd3.Next(0, objlength);
                 return obj;

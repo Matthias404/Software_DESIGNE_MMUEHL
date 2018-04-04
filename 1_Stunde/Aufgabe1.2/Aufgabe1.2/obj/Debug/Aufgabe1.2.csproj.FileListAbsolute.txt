@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\bin\Debug\Aufgabe1.2.exe.config
 C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\bin\Debug\Aufgabe1.2.exe
 C:\Arbeiten\Studium\1_Stunde\Aufgabe1.2\Aufgabe1.2\bin\Debug\Aufgabe1.2.pdb
@@ -11,3 +12,5 @@ G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1
 G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1.2.csproj.CoreCompileInputs.cache
 G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1.2.exe
 G:\Git\Software_DESIGNE_MMUEHL\1_Stunde\Aufgabe1.2\Aufgabe1.2\obj\Debug\Aufgabe1.2.pdb
+=======
+>>>>>>> 3ffa228f3fde8fa72ea4a3f12c21ab384d78bdf9

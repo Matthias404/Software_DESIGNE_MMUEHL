@@ -1,22 +1,64 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe1.2", "Aufgabe1.2\Aufgabe1.2.csproj", "{69E69FC8-58B9-4AA7-A805-E2C051EEA30C}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{69E69FC8-58B9-4AA7-A805-E2C051EEA30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69E69FC8-58B9-4AA7-A805-E2C051EEA30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69E69FC8-58B9-4AA7-A805-E2C051EEA30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69E69FC8-58B9-4AA7-A805-E2C051EEA30C}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aufgabe1._2
+{
+    class Program
+    {
+            static string[] subjects = { "Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore" };
+            static string[] verbs = { "braut", "liebt", "studiert", "hasst", "zaubert", "zerstört" };
+            static string[] objects = { "Zaubertränke", "den Grimm", "Lupin", "Hogwards", "die Karte des Rumtreibers", "Dementoren" };
+            
+        static void Main(string[] args)
+        {
+
+                zufalls("");
+            
+            Console.ReadLine();
+        }
+
+        static void zufalls(string ausgabe)
+        {
+            Random rnd1 = new Random();
+            Random rnd2 = new Random();
+            Random rnd3 = new Random();
+
+            for (int i = 0; i <= 4; i++)
+            {
+                Console.WriteLine(subjects[(rnd1.Next(0, subjects.Length))] + " " + verbs[rnd2.Next(0, verbs.Length)] + " " + objects[rnd3.Next(0, objects.Length)]);
+                
+            }
+        }
+
+        
+            static int erste() { 
+
+               
+                
+
+               
+
+                return 1;
+             }
+
+            static int zweite() {
+
+                Random rnd2 = new Random();
+                int verblength = verbs.Length;
+                int verb = rnd2.Next(0, verblength);
+                return 1;
+             }
+            static int drei(){
+
+                Random rnd3 = new Random();
+                int objlength = objects.Length;
+                int obj = rnd3.Next(0, objlength);
+                return 1;
+
+            }
+        }
+    }
+
