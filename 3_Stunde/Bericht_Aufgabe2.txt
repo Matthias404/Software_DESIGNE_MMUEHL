@@ -1,0 +1,18 @@
+Sehr geehrte Leserinnen und Leser,
+in dem Praktikum Aufgabe 2 Behandeln die Java Programme Program.cs und FamilyTree.cs.
+
+Rekursion:
+Die Programme werden als Rekursiv beschreiben da sie in sich selbst immer wieder aufrufen können.
+
+Halte Punkt ab Zeile 19:
+
+Der Code von Programm wird nun bis zu Zeile 18 ausgeführt.
+Der Code, der bis jetzt ausgefürt wurde ist bis jetzt nur eine Root zu einer Person die aus der Datei FamilyTree. 
+
+Dad:
+
+Klickt man im Debugger nun auf Dad so sehen wir jetzt schon wie der Code im Programm sich mindesten einem wieder aufruft also rekursiv ist. 
+
+Wenn wir nun den Code bis Zeile 22 laufen lassen sehen wir das die erste Ausgabe für Dad: Charie Wales ist. Um nicht die erste Person auszugeben, können wir durch die Änderung der Parameter erreichen. Tauschen wir das =! Durch ein == und erstellen einem Try und Catch block zur Sicherheit, falls der Name nicht vorhanden seien sollte, können wir das Programm vor dem Absturz schützen. 
+Altersabfrage:
+um das Alter einer Person Abzufragen reicht eine einfaches Abfragen des Alters einer Person die gerade Abgefragt wird.
