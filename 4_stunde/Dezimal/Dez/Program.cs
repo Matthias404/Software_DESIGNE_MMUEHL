@@ -120,11 +120,11 @@ namespace Dez
                 }
                 if (aChoise == 3)
                 {
-                    Console.WriteLine("Bitte Zahlensystem Wählen");
+                    Console.WriteLine("Bitte End Zahlensystem Wählen");
                     String baseSys = Console.ReadLine();
                     int.TryParse(baseSys, out int numSys);
 
-                    Console.WriteLine("Bitte basis Wählen");
+                    Console.WriteLine("Bitte Anfangs Zahlensystem Wählen");
                     String frombaseSys = Console.ReadLine();
                     int.TryParse(frombaseSys, out int fromNumSys);
 
