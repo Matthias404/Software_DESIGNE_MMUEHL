@@ -5,54 +5,64 @@ namespace Aufgabe_UML
 {
     class Program
     {
-        static void Main(string[] args) { 
-       
-    }
-
-    class Person
-    {
-        public string Name;
-        public int Alter;
-    }
-
-    class Teilnehmer : Person
-    {
-        public int Matrikelnummer;
-
-        public void Teilnehmen()
-        {
-            
-        }
-
-       
-    }
-
-    class Dozent : Person
-    {
-        public string Büro;
-       
+        Kurs KursA = new Program.Kurs();
 
         
+        public void KursATeilnehmer(int a) {
+            KursA.Zuhoehrer(a);
+        }
     }
-
-    class Kurs : Dozent
-    {
-        public string Titel;
-        public string Uhrzeit;
-        public string Wochentag;
-        public string Raum;
-        public int Teilnehmer;
-        public List<int> AllTeilnehmer = new List<int>();
-
-    }
-    class Sprechstunde : Kurs
-    {
-
-        public void SprechstundeInfo()
+        class Person
         {
-            Console.WriteLine("Die Sprechstunde " + Uhrzeit + " findet am " + Wochentag + " in Raum " + Raum + " statt.");
+            public string Name;
+            public int Alter;
+        }
+
+        class Teilnehmer : Person
+        {
+            public int Matrikelnummer;
+
+            public void Teilnehmen()
+            {
+                KursATeilnehmer(Matrikelnummer);
+            }
+
+
+        }
+
+        class Dozent : Person
+        {
+            public string Büro;
+
+
+
+        }
+
+        class Kurs : Dozent
+        {
+            public string Titel;
+            public string Uhrzeit;
+            public string Wochentag;
+            public string Raum;
+            public int Teilnehmer;
+            public List<int> AllTeilnehmer = new List<int>();
+
+            public void Zuhoehrer(int a)
+            {
+                Teilnehmer = Teilnehmer + 1;
+                AllTeilnehmer.Add(a);
+            }
+
+        }
+        class Sprechstunde : Kurs
+        {
+
+            public void SprechstundeInfo()
+            {
+                Console.WriteLine("Die Sprechstunde " + Uhrzeit + " findet am " + Wochentag + " in Raum " + Raum + " statt.");
+            }
+
         }
 
     }
-
 }
