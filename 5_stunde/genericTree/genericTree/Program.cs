@@ -93,6 +93,17 @@ namespace genericTree
                 }
                 Console.ReadLine();
             }
+
+
+            public string FindNode(T item)
+            {
+                List<TreeNode<T>> _foundNodes = new List<TreeNode<T>>;
+                _foundNodes = allChildren.FindAll(item);
+                retrun ; 
+            }
+          
+
+
         }
         public class Tree<Generic>
         {
@@ -104,5 +115,6 @@ namespace genericTree
             }
 
         }
+        
     }
 }
