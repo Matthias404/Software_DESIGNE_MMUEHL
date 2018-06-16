@@ -1,0 +1,224 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace tictactoe
+{
+    public class Program
+    {
+        public int g;       //game size
+        public int w;       //pints to win
+
+        public int player = 1;
+        int[,] gameplan;
+
+        public int x;       //x position
+        public int y;       //y position
+
+        int points;
+
+        public void Main()
+        {
+            // abfrage spielfeldgröße
+            Console.WriteLine("Bitte Spielfeld Gröse eingeben");
+            try
+            {
+                g = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Bitte nur eine Zahl eingeben");
+            }
+
+            // abfrage Punkte zum Sieg
+            Console.WriteLine("Bitte Spielfeld Gröse eingeben");
+            try
+            {
+                w = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Bitte eine Zahl eingeben Zahl muss kleiner als die Spielfeldgröße sein");
+            }
+
+            if (w <= g)
+            {
+                gameplan = new int[g, g];
+                Move();
+            }
+        }
+
+
+        public void Move()
+        {
+            GamePrint();
+            Console.WriteLine("Bitte x Position Eingaben");
+            try
+            {
+                x = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Bitte nur eine Zahl eingeben");
+                Move();
+            }
+
+            Console.WriteLine("Bitte y Position Eingaben");
+            try
+            {
+                y = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Bitte nur eine Zahl eingeben");
+                Move();
+            }
+
+            if (x <= g && x >= 0 && y <= g && y >= 0)
+            {
+                if (gameplan[x, y] == 0)
+                {
+                    gameplan[x, y] = player;
+                }
+                else
+                {
+                    Console.WriteLine("Bitte freis Feld eingeben");
+                    Move();
+                }
+                win();
+            }
+        }
+
+        public void win()
+        {
+            int xt = x - w;
+            int yt = y - w;
+
+            points = 0;
+
+            if (xt <= 0)
+            {
+                xt = 0;
+            }
+
+            if (yt <= 0)
+            {
+                yt = 0;
+            }
+            //Abfrage x
+            for (; xt <= x + w; xt++)
+            {
+                if (gameplan[xt, y] == player)
+                {
+                    points = points + player;
+                    if (points == player * w)
+                    {
+                        Winner();
+                    }
+                }
+                else
+                {
+                    points = 0;
+                }
+            }
+            //Abfrage y
+            for (; yt <= y + w; yt++)
+            {
+                if (gameplan[x, yt] == player)
+                {
+                    points = points + player;
+
+                    if (points == player * w)
+                    {
+                        Winner();
+                    }
+                }
+                else
+                {
+                    points = 0;
+                }
+            }
+
+            //Abfrage Schräg 1
+            for (; xt <= x + w; xt++)
+            {
+                for (; yt <= y + w; yt++)
+                {
+                    if (gameplan[xt, yt] == player)
+                    {
+                        points = points + player;
+
+                        if (points == player * w)
+                        {
+                            Winner();
+                        }
+                    }
+                }
+            }
+            //Abfrage Schräg 2
+            for (; xt <= x + w; xt++)
+            {
+                for (; yt + w <= yt; yt--)
+                {
+                    if (gameplan[xt, yt] == player)
+                    {
+                        points = points + player;
+
+                        if (points == player * w)
+                        {
+                            Winner();
+                        }
+                    }
+                }
+            }
+
+            player = player * -1;
+            Move();
+        }
+
+
+        //Output Game Plan 
+        public void GamePrint()
+        {
+            for (int i = 0; i <= g; i++)
+            {
+                Console.Write("" + i);
+                for (int j = 0; j <= g; j++)
+                {
+                    if (gameplan[i, j] == 0)
+                    {
+                        Console.Write("");
+                    }
+
+                    if (gameplan[i, j] == 1)
+                    {
+                        Console.Write("O");
+                    }
+
+                    if (gameplan[i, j] == -1)
+                    {
+                        Console.Write("X");
+                    }
+                }
+                Console.WriteLine("" + i);
+            }
+        }
+
+        public void Winner()
+        {
+            Console.WriteLine("Player " + player + " wins");
+            Console.WriteLine("Wollen sie erneut Spielen? (ja) (nein)");
+            string ans = Console.ReadLine();
+            if (ans == "ja")
+            {
+                Main();
+            }
+            else
+            {
+                Console.WriteLine("DANKE");
+            }
+        }
+    }
+}
